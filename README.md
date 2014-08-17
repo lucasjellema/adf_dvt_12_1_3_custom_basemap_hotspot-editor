@@ -11,7 +11,7 @@ Steps to get going:
 - Configure that local image directory in class FileHandler (public final static String imageDirectory)
 - Run custom-basemap-editor.jsf
 - When the page opens, upload an image, press the button Process File. The image is shown in the browser. Click on it to define hotspots; in the code editor you will find the custom base map xml required for the Thematic Map component
-- 
+
 TODO:
 - set logical identifier and long label on the hotspots
 - generate hotspots over a range (horizontal, vertical) or grid
