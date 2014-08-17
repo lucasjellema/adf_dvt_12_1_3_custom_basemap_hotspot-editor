@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="custom-basemap-editor.jsf" id="d1">
+        <af:clientListener method="onPageLoad" type="load"/>
+        <h:outputScript library="js/" name="customBasemapEditor.js" id="os1"/>
+        <f:facet name="metaContainer">
+            <af:resource type="javascript">
+              function onPageLoad(evt) {
+                  newCanvasListen();
+              }
+            </af:resource>
+            <af:resource type="javascript" source="resources/js/customBasemapEditor"/>
+        </f:facet>
+        <af:form id="f1" usesUpload="true">
+<af:panelLabelAndMessage id="plm" label="Upload Image for Custom Base Map" for="if1">
+                    <af:inputFile label="Upload image" id="if1" value="#{fileHandlerBean.file}"/>
+            <af:button text="Process Image" id="b1" actionListener="#{fileHandlerBean.handleFileUpload}"/>
+</af:panelLabelAndMessage>
+                    <af:codeEditor label="Custom Base Map XML file" id="xmlEditor" clientComponent="true"
+                                   language="xml" columns="140" rows="14"/>
+                    <canvas id="canvas1" height="1280" width="960" xmlns="http://www.w3.org/1999/xhtml"></canvas>
+        </af:form>
+    </af:document>
+</f:view>
