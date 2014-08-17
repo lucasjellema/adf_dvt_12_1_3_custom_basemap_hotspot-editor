@@ -76,7 +76,7 @@
     var xml = '';
     xml = "<basemap id='yourBaseMap'>\n";
     xml=xml+"  <layer id='layer1'>\n"; 
-    xml=xml+"    <image height='"+imageWidth+"' width='"+imageHeight+"' source='/images/"+imageFileName+"'/>\n";
+    xml=xml+"    <image height='"+imageHeight+"' width='"+imageWidth+"' source='/images/"+imageFileName+"'/>\n";
     xml=xml+"  </layer>\n";
     xml=xml+"  <points>\n";
     var arrayLength = hotspots.length;
