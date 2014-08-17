@@ -12,6 +12,8 @@ Steps to get going:
 - Run custom-basemap-editor.jsf
 - When the page opens, upload an image, press the button Process File. The image is shown in the browser. Click on it to define hotspots; in the code editor you will find the custom base map xml required for the Thematic Map component
 
+See this article for details on using the tool: http://technology.amis.nl/2014/08/17/adf-dvt-editor-for-easily-creating-custom-base-map-definition-files-hotspot-editor/
+
 TODO:
 - set logical identifier and long label on the hotspots
 - generate hotspots over a range (horizontal, vertical) or grid
